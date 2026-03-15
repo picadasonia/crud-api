@@ -70,6 +70,10 @@ app.delete('/api/users/:id', (req, res) => {
     });
 }); 
 
+app.get('/', (req, res) => {
+    res.send('Welcome');
+});
+
 app.listen(port, () => {
     console.log(`Server running at http://localhost: ${port}`);
 });
